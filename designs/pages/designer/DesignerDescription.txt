@@ -1,0 +1,43 @@
+El Designer es una herramienta de diseño de páginas.
+(*Recordar que los grupos se definen por sus tipos, y los tipos son un conjunto de vistas)
+
+Las vistas representan la diferente forma de organizar la información en filas y columnas dentro de un
+contenedor principal.Ese contenedor principal es la página. 
+
+Las páginas, por ser el elemento contenedor de más jerarquía  en la cadena de posicionamiento tendrá una serie de 
+características principales propias que no tendran otros elementos.
+
+   -El es su elemento padre.
+   -Define si la zona del contenido es toda el área de la página o si hace uso de elementos permanentes
+  como puede ser un header, un footer,columna izquierda o columna derecha.
+   -Opciones de diseño específicas, como puede ser Boxed o full width page.
+
+
+
+
+0.AdminPageTop/AdminPageBottom: Son elementos de la plantilla superior(admin), por lo que no deben ser tomados 
+en cuenta en esta seccion
+
+1 - Layout elements:
+
+	Los elementos de layout se pueden agregar a una página y conforman las diferentes secciones que tiene 
+	una página, son del tipo 'filas' para separaciones horizontales y 'columnas' para separaciones verticales.
+	
+	Un elemento de layout puede englobar a otros elementos de layout además de los elementos de contenido.
+	
+	Un elemento de layout es a su vez un hook de carga que lanzará el código de los layouts y elementos que
+lo integran.
+
+	Se pueden crear elementos de layout compuestos, por ejemplo un elemento de layout que sea un bloque tipo:
+	2 filas:
+	 fila 1: 2 columnas al 50%
+	 fila 2: 1 columna al 50%
+	 		 2 columnas al 25% 
+
+
+
+	
+
+
+	   
+	
