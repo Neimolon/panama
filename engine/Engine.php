@@ -1,4 +1,4 @@
-<?php
+<?php 
 /*
  * 2015
  * 
@@ -14,15 +14,19 @@
  *  @author Diego Martínez Matos
  *  @license https://www.gnu.org/licenses/gpl-3.0.txt  GNU General Public License (GPL) 3.0
  */
- 
-define('_ROOT_DIR',dirname(__FILE__));
-require _ROOT_DIR.'/engine/LoadEngine.php';
-
-LoadEngine::run();
 
 
+class Engine{
+	public static $cookie;
+	public static $debug;
+	
+
+		
+	
+}
 
 
 
 
 
+?>
