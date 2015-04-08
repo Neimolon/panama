@@ -8,6 +8,23 @@ Diagrams can be made using following softwares:
 .mwb extensions
 Download at https://dev.mysql.com/downloads/workbench/
 
+*****************************
+*        Flow Diagrams      *
+*****************************
+This section contains the differents paths that an user can take
+
+Diagrams can be made using following softwares:
+
+-Dia Diagram Editor
+.dia extensions
+http://sourceforge.net/projects/dia-installer/
+
+*****************************
+*        UML Designs        *
+*****************************
+
+Nothing new with those diagrams, reflecting the class schema
+
 
 *****************************
 *        Page Designs       *
