@@ -21,11 +21,8 @@
  	public static function run(){
  		//Cargar archivos config
  		LoadEngine::loadRequires();
-				
-
  			
- 			
-	 		//Definicion de rutas -->LoadEngine
+	 		//Definicion de rutas --> LoadEngine-> /defines/path.php 
 	 		//Cargar URL ammigables--> RewriteEngine
 	 		//Conectar con la Base de Datos --> LoadEngine -> ConnectionEngine
 

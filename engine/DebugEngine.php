@@ -11,8 +11,14 @@ class DebugEngine{
 		$this->error_log = array();	
 	}
 	
-	public static function showErrors(){
+	public function getErrorLog(){
 		
+	}
+	
+	public static function showErrors(){
+		echo '<p>';
+		print_r(DebugEngine::$error_log);
+		echo '<p>';
 	}
 	
 	public static function registerError($error,$user = "Unknown"){
