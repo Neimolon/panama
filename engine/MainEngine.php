@@ -1,4 +1,4 @@
-<?php
+<?php 
 /*
  * 2015
  * 
@@ -14,16 +14,27 @@
  *  @author Diego Martínez Matos
  *  @license https://www.gnu.org/licenses/gpl-3.0.txt  GNU General Public License (GPL) 3.0
  */
- 
-define('_ROOT_DIR',dirname(__FILE__));
-require _ROOT_DIR.'/engine/Engine.php';
-require _ROOT_DIR.'/engine/LoadEngine.php';
 
-LoadEngine::load();
+/**
+ * @author Admin
+ * This class will engage all the  subengines and keep all useful data 
+ */
+class MainEngine extends Engine{
+	public static $cookie;
+	public static $debug;
+	
+	public static function load(){
+		//obtener todos los valores y toda la pesca de todos los motores
+		
+	}
+	
+
+		
+	
+}
 
 
 
 
 
-
-
+?>

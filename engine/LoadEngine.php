@@ -16,17 +16,21 @@
  */
  
   
- class LoadEngine{
+ class LoadEngine extends Engine{
 	 	
- 	public static function run(){
+ 	public static function load(){
  		//Cargar archivos config
+ 		
  		LoadEngine::loadRequires();
+ 		LoadEngine::loadMainEngine();
+ 		LoadEngine::loadTranslationEngine();
+ 		LoadEngine::loadDebugEngine();
+ 		LoadEngine::loadDbEngine();
+ 		
  			
-	 		//Definicion de rutas --> LoadEngine-> /defines/path.php 
-	 		//Cargar URL ammigables--> RewriteEngine
+ 		//Cargar URL ammigables--> RewriteEngine
 	 		//Conectar con la Base de Datos --> LoadEngine -> ConnectionEngine
 
- 		//Cargar Debug -> DebugEngine
  		
  		//Comprobar si existe cookie en el navegador --> LoadEngine.getCookie()
  			//Si-Cargar Datos
@@ -38,13 +42,39 @@
  		
  		
  	}
- 	
+
+ 	/**
+ 	 * Load various required files
+ 	 * 
+ 	 */
  	private static function loadRequires(){
- 		//	Defines
- 		require_once _ROOT_DIR.'/defines/path.php';
- 		require_once _ENGINE_DIR.'/Engine.php';
+ 		
+ 		require_once _ROOT_DIR.'/config/defines.php';
+ 		
+ 		
+ 	}
+
+ 	/**
+ 	 * Require files and loads TranslationEngine
+	 */
+ 	private static function loadTranslationEngine(){
+ 		require_once _ENGINE_DIR.'/TranslationEngine.php';
+ 		TranslationEngine::load();
  	}
  	
+ 	private static function loadDebugEngine(){
+ 		require_once _ENGINE_DIR.'/DebugEngine.php';
+ 		DebugEngine::load();
+ 	}
  	
+ 	private static function loadMainEngine(){
+ 		require_once _ENGINE_DIR.'/MainEngine.php';
+ 		MainEngine::load();
+ 	}
+ 	
+ 	private static function loadDbEngine(){
+ 		require_once _ENGINE_DIR.'/DbEngine.php';
+ 		DbEngine::load();
+ 	}
  }
 ?>
